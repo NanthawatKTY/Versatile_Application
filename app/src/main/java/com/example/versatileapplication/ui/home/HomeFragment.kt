@@ -10,9 +10,9 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.example.versatileapplication.R
 
-class AgeFragment : Fragment() {
+class HomeFragment : Fragment() {
 
-    private lateinit var ageViewModel: AgeViewModel
+    private lateinit var homeViewModel: HomeViewModel
 
     override fun onCreateView(
             inflater: LayoutInflater,
@@ -20,10 +20,10 @@ class AgeFragment : Fragment() {
             savedInstanceState: Bundle?
     ): View? {
 
-        ageViewModel = ViewModelProvider(this).get(AgeViewModel::class.java)
-        val root = inflater.inflate(R.layout.fragment_age, container, false)
+        homeViewModel = ViewModelProvider(this).get(HomeViewModel::class.java)
+        val root = inflater.inflate(R.layout.fragment_home, container, false)
         val textView: TextView = root.findViewById(R.id.text_age_title)
-        ageViewModel.text.observe(viewLifecycleOwner, Observer {
+        homeViewModel.text.observe(viewLifecycleOwner, Observer {
             textView.text = it
         })
         return root

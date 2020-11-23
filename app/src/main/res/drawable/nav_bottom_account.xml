@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--  Before checking  -->
+    <item android:drawable="@drawable/outline_perm_identity_black_24dp" android:state_checked="true"></item>
+    <!--  After checking  -->
+    <item android:drawable="@drawable/outline_person_outline_black_24dp" android:state_checked="false"></item>
+</selector>

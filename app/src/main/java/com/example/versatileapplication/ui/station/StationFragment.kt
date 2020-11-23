@@ -1,4 +1,4 @@
-package com.example.versatileapplication.ui.dashboard
+package com.example.versatileapplication.ui.station
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,20 +10,19 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.example.versatileapplication.R
 
-class DashboardFragment : Fragment() {
+class StationFragment : Fragment() {
 
-    private lateinit var dashboardViewModel: DashboardViewModel
+    private lateinit var stationViewModel: StationViewModel
 
     override fun onCreateView(
             inflater: LayoutInflater,
             container: ViewGroup?,
             savedInstanceState: Bundle?
     ): View? {
-        dashboardViewModel =
-                ViewModelProvider(this).get(DashboardViewModel::class.java)
-        val root = inflater.inflate(R.layout.fragment_dashboard, container, false)
-        val textView: TextView = root.findViewById(R.id.text_dashboard)
-        dashboardViewModel.text.observe(viewLifecycleOwner, Observer {
+        stationViewModel = ViewModelProvider(this).get(StationViewModel::class.java)
+        val root = inflater.inflate(R.layout.fragment_motorcycle, container, false)
+        val textView: TextView = root.findViewById(R.id.text_station)
+        stationViewModel.text.observe(viewLifecycleOwner, Observer {
             textView.text = it
         })
         return root

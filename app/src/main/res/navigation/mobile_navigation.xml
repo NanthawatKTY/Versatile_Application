@@ -3,23 +3,36 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_age">
+    app:startDestination="@+id/navigation_home">
 
     <fragment
-        android:id="@+id/navigation_age"
-        android:name="com.example.versatileapplication.ui.home.AgeFragment"
+        android:id="@+id/navigation_home"
+        android:name="com.example.versatileapplication.ui.home.HomeFragment"
         android:label="@string/title_home"
-        tools:layout="@layout/fragment_age" />
+        tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.example.versatileapplication.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        android:id="@+id/navigation_station"
+        android:name="com.example.versatileapplication.ui.station.StationFragment"
+        android:label="@string/title_station"
+        tools:layout="@layout/fragment_station" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.example.versatileapplication.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:id="@+id/navigation_wallet"
+        android:name="com.example.versatileapplication.ui.wallet.WalletFragment"
+        android:label="@string/title_wallet"
+        tools:layout="@layout/fragment_wallet" />
+
+    <fragment
+        android:id="@+id/navigation_motorcycle"
+        android:name="com.example.versatileapplication.ui.motorcycle.MotorcycleFragment"
+        android:label="@string/title_motorcycle"
+        tools:layout="@layout/fragment_motorcycle" />
+
+
+    <fragment
+        android:id="@+id/navigation_account"
+        android:name="com.example.versatileapplication.ui.accounts.AccountFragment"
+        android:label="@string/title_account"
+        tools:layout="@layout/fragment_account" />
 </navigation>
