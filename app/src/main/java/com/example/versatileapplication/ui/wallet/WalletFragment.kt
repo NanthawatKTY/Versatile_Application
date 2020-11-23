@@ -14,6 +14,7 @@ import com.example.versatileapplication.ui.station.StationViewModel
 class WalletFragment: Fragment() {
     private lateinit var walletViewModel: StationViewModel
 
+//    Wallet
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
