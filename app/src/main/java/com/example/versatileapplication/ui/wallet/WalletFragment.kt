@@ -12,7 +12,7 @@ import com.example.versatileapplication.R
 import com.example.versatileapplication.ui.station.StationViewModel
 
 class WalletFragment: Fragment() {
-    private lateinit var walletViewModel: StationViewModel
+    private lateinit var walletViewModel: WalletViewModel
 
 //    Wallet
     override fun onCreateView(
@@ -20,7 +20,7 @@ class WalletFragment: Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        walletViewModel = ViewModelProvider(this).get(StationViewModel::class.java)
+        walletViewModel = ViewModelProvider(this).get(WalletViewModel::class.java)
         val root = inflater.inflate(R.layout.fragment_wallet, container, false)
         val textView: TextView = root.findViewById(R.id.text_wallet)
         walletViewModel.text.observe(viewLifecycleOwner, Observer {

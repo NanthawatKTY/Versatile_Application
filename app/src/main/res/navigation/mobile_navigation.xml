@@ -15,7 +15,7 @@
         android:id="@+id/navigation_station"
         android:name="com.example.versatileapplication.ui.station.StationFragment"
         android:label="@string/title_station"
-        tools:layout="@layout/fragment_station" />
+        tools:layout="@layout/fragment_station"/>
 
     <fragment
         android:id="@+id/navigation_wallet"
@@ -35,4 +35,11 @@
         android:name="com.example.versatileapplication.ui.accounts.AccountFragment"
         android:label="@string/title_account"
         tools:layout="@layout/fragment_account" />
+
+    <fragment
+        android:id="@+id/navigation_login"
+        android:name="com.example.versatileapplication.ui.accounts.AccountFragment"
+        android:label="@string/title_account"
+        tools:layout="@layout/fragment_login" />
+
 </navigation>

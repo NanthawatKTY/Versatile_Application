@@ -20,10 +20,10 @@ class StationFragment : Fragment() {
             savedInstanceState: Bundle?
     ): View? {
         stationViewModel = ViewModelProvider(this).get(StationViewModel::class.java)
-        val root = inflater.inflate(R.layout.fragment_motorcycle, container, false)
-        val textView: TextView = root.findViewById(R.id.text_station)
+        val root = inflater.inflate(R.layout.fragment_station, container, false)
+        val textStation: TextView = root.findViewById(R.id.text_station)
         stationViewModel.text.observe(viewLifecycleOwner, Observer {
-            textView.text = it
+            textStation.text = it
         })
         return root
     }
