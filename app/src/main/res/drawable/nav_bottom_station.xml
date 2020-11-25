@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <!--  Before checking  -->
-    <item android:drawable="@drawable/baseline_commute_white_18dp" android:state_checked="false"></item>
+    <item android:drawable="@drawable/baseline_ev_station_red_500_24dp" android:state_checked="false"></item>
     <!--  After checking  -->
 <!--    <item android:drawable="@drawable/outline_home_black_24dp" ></item>-->
 </selector>
