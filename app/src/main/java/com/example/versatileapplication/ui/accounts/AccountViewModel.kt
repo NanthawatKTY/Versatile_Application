@@ -1,5 +1,7 @@
 package com.example.versatileapplication.ui.accounts
 
+import android.content.Intent
+import androidx.core.content.ContextCompat.startActivity
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -11,4 +13,5 @@ class AccountViewModel : ViewModel() {
         value = "Hello $userName"
     }
     val textGreet: LiveData<String> = _text
+
 }
