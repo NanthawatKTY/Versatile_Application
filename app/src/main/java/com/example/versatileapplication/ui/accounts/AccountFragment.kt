@@ -10,7 +10,6 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.example.versatileapplication.R
-import com.example.versatileapplication.ui.accounts.loginPage.LoginFragment
 import kotlinx.android.synthetic.main.fragment_account.*
 
 class AccountFragment : Fragment() {
