@@ -9,6 +9,7 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+
 import com.example.versatileapplication.R
 import kotlinx.android.synthetic.main.fragment_account.*
 
@@ -37,12 +38,13 @@ class AccountFragment : Fragment() {
 //        )
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        /*super.onViewCreated(view, savedInstanceState)*/
-        card_view_login_out.setOnClickListener{
-            startActivity(Intent(this.context, LoginFragment::class.java))
-            println("Test login")
-        }
-    }
+//    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+//        /*super.onViewCreated(view, savedInstanceState)*/
+//        card_view_login_out.setOnClickListener{
+//            val intentCardLogin = Intent(this.context, LoginActivity::class.java)
+//            startActivity(intentCardLogin)
+//        }
+//    }
+
 
 }
