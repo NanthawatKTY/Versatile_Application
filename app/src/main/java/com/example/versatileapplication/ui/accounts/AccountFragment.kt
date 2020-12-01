@@ -2,6 +2,7 @@ package com.example.versatileapplication.ui.accounts
 
 import android.content.Intent
 import android.os.Bundle
+import android.text.TextUtils.replace
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -9,8 +10,11 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.findNavController
 
 import com.example.versatileapplication.R
+import com.example.versatileapplication.fragments.SignInFragment
+import com.example.versatileapplication.fragments.UserInfoFragment
 import kotlinx.android.synthetic.main.fragment_account.*
 
 class AccountFragment : Fragment() {
@@ -30,21 +34,20 @@ class AccountFragment : Fragment() {
         })
         return root
 
-//        // This is used to hide the status bar and make the splash screen as a full screen activity.
-//        val window
-//        window.setFlags(
-//            WindowManager.LayoutParams.FLAG_FULLSCREEN,
-//            WindowManager.LayoutParams.FLAG_FULLSCREEN
-//        )
     }
 
-//    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
 //        /*super.onViewCreated(view, savedInstanceState)*/
 //        card_view_login_out.setOnClickListener{
-//            val intentCardLogin = Intent(this.context, LoginActivity::class.java)
+//            val intentCardLogin = Intent(this.context, SignInFragment::class.java)
 //            startActivity(intentCardLogin)
 //        }
-//    }
+
+        card_view_login_out.setOnClickListener {
+            it.findNavController().navigate(R.id.action_navigation_account_to_navigation_signin)
+        }
+    }
 
 
 }

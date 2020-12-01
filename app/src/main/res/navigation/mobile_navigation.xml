@@ -29,11 +29,21 @@
         android:label="@string/title_motorcycle"
         tools:layout="@layout/fragment_motorcycle" />
 
-
     <fragment
         android:id="@+id/navigation_account"
         android:name="com.example.versatileapplication.ui.accounts.AccountFragment"
         android:label="@string/title_account"
-        tools:layout="@layout/fragment_account" />
+        tools:layout="@layout/fragment_account" >
+        <action
+            android:id="@+id/action_navigation_account_to_navigation_signin"
+            app:destination="@id/navigation_signin" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/navigation_signin"
+        android:name="com.example.versatileapplication.fragments.SignInFragment"
+
+        tools:layout="@layout/fragment_sign_in" />
 
 </navigation>
