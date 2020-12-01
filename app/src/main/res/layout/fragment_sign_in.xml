@@ -113,9 +113,13 @@
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/button"
+                    android:id="@+id/btn_signin"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginEnd="50dp"
+                    android:layout_gravity="center"
                     android:textColor="@color/white"
                     android:background="@drawable/rounded_button"
                     android:text="Button" />
