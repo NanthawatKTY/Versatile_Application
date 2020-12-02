@@ -29,6 +29,7 @@
         android:label="@string/title_motorcycle"
         tools:layout="@layout/fragment_motorcycle" />
 
+<!--  Account Fragment  -->
     <fragment
         android:id="@+id/navigation_account"
         android:name="com.example.versatileapplication.ui.accounts.AccountFragment"
@@ -37,13 +38,38 @@
         <action
             android:id="@+id/action_navigation_account_to_navigation_signin"
             app:destination="@id/navigation_signin" />
+        <action
+            android:id="@+id/action_navigation_account_to_navigation_user_info"
+            app:destination="@id/navigation_user_info" />
+        <action
+            android:id="@+id/action_navigation_account_to_navigation_settings"
+            app:destination="@id/navigation_settings" />
     </fragment>
 
 
-    <fragment
-        android:id="@+id/navigation_signin"
-        android:name="com.example.versatileapplication.fragments.SignInFragment"
+        <fragment
+            android:id="@+id/navigation_signin"
+            android:name="com.example.versatileapplication.fragments.login.SignInFragment"
+            tools:layout="@layout/fragment_sign_in" >
+            <action
+                android:id="@+id/action_navigation_signin_to_navigation_signup"
+                app:destination="@id/navigation_signup" />
+        </fragment>
 
-        tools:layout="@layout/fragment_sign_in" />
+            <fragment
+                android:id="@+id/navigation_signup"
+                android:name="com.example.versatileapplication.fragments.login.SignupFragment"
+                tools:layout="@layout/fragment_signup" />
 
+        <fragment
+            android:id="@+id/navigation_user_info"
+            android:name="com.example.versatileapplication.fragments.userinfo.UserInfoFragment"
+            tools:layout="@layout/fragment_user_info" />
+
+        <fragment
+            android:id="@+id/navigation_settings"
+            android:name="com.example.versatileapplication.fragments.settings.SettingsFragment"
+            tools:layout="@layout/fragment_settings" />
+
+<!--  Account Fragment  -->
 </navigation>

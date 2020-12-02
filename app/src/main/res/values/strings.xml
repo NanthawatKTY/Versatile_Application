@@ -41,7 +41,10 @@
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
     <string name="title_activity_login2">LoginActivity2</string>
-    <string name="forget_password"><u>Forget password</u></string>
+    <string name="forget_password"><b><u>Forget password ?</u></b></string>
+    <string name="have_no_iChange"><b><u>Do not have iChange account ?</u></b></string>
+    <string name="signUp_iChange">Sign up iChange account</string>
+    <string name="email_or_phone">Email or phone number</string>
 
     <!--  Text hint  -->
     <string name="username_hint">Username</string>
@@ -49,4 +52,22 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="sign_in_sign_out">Sign In/Sign Out</string>
+
+    <!--  Text for Sign Up Form  -->
+    <string name="user_full_name_signup">Full name</string>
+    <string name="phone_no_signup">Phone number</string>
+    <string name="user_email_signup">Email</string>
+    <string name="moto_brand_signup">Brand</string>
+    <string name="moto_serial_number_signup">Motorcycle serial number</string>
+    <string name="moto_series_signup">Series</string>
+    <string name="moto_color_signup">Color</string>
+    <string name="set_moto_name_signup">Set your motorcycle name</string>
+    <string name="text_explain_name_signup">ชื่อนี้จะถูกเรียกแทนยี่ห้อและเลขตัวถังรถเมื่อทำรายการต่าง ๆ (จะตั้งหรือไม่ก็ได้)</string>
+    <string name="question_pass_reset_signup">Question when reset password</string>
+    <string name="answer_pass_reset_signup">Type your answer</string>
+    <string name="set_password_signup">Your password</string>
+    <string name="confirm_password_signup">Confirm your password</string>
+    <string name="accept_agreement">I accept agreement and allow to access privacy</string>
+    <string name="signup_text_button">Sign up</string>
+
 </resources>

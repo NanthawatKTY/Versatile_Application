@@ -5,8 +5,8 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
 import androidx.navigation.ui.setupWithNavController
-import com.example.versatileapplication.fragments.SignInFragment
-import com.example.versatileapplication.fragments.UserInfoFragment
+import com.example.versatileapplication.fragments.login.SignInFragment
+import com.example.versatileapplication.fragments.userinfo.UserInfoFragment
 import kotlinx.android.synthetic.main.fragment_account.*
 
 class MainActivity : AppCompatActivity() {

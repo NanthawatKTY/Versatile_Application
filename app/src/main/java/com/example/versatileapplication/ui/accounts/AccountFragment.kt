@@ -13,8 +13,6 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.findNavController
 
 import com.example.versatileapplication.R
-import com.example.versatileapplication.fragments.SignInFragment
-import com.example.versatileapplication.fragments.UserInfoFragment
 import kotlinx.android.synthetic.main.fragment_account.*
 
 class AccountFragment : Fragment() {
@@ -47,6 +45,15 @@ class AccountFragment : Fragment() {
         card_view_login_out.setOnClickListener {
             it.findNavController().navigate(R.id.action_navigation_account_to_navigation_signin)
         }
+
+        card_view_userinfo.setOnClickListener {
+            it.findNavController().navigate(R.id.action_navigation_account_to_navigation_user_info)
+        }
+
+        card_viewSetting.setOnClickListener {
+            it.findNavController().navigate(R.id.action_navigation_account_to_navigation_settings)
+        }
+
     }
 
 

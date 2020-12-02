@@ -1,4 +1,4 @@
-package com.example.versatileapplication.fragments
+package com.example.versatileapplication.fragments.userinfo
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -19,9 +19,4 @@ private const val ARG_PARAM2 = "param2"
  */
 class UserInfoFragment : Fragment(R.layout.fragment_user_info) {
     // TODO: Rename and change types of parameters
-
-
-
-
-
 }
