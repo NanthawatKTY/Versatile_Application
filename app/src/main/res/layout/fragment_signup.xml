@@ -12,7 +12,7 @@
         android:layout_height="109dp"
         android:layout_marginTop="60dp"
         android:background="@android:color/background_dark"
-        app:cardBackgroundColor="#D2C1C0C0"
+        app:cardBackgroundColor="#D2DDDBDB"
         app:cardCornerRadius="0dp" >
 
         <LinearLayout
@@ -71,7 +71,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@android:color/background_dark"
-                app:cardBackgroundColor="#D2C1C0C0">
+                app:cardBackgroundColor="#D2DDDBDB">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -84,6 +84,8 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:layout_marginStart="40dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
                         android:text="@string/user_full_name_signup" />
 
                     <com.google.android.material.textfield.TextInputLayout
@@ -91,11 +93,13 @@
                         android:layout_height="match_parent"
                         android:layout_marginTop="5dp"
                         android:layout_marginStart="40dp"
-                        android:layout_marginEnd="40dp">
+                        android:layout_marginEnd="40dp"
+                        android:background="@color/white">
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:background="@color/white"
                             android:hint="@string/user_full_name_signup" />
                     </com.google.android.material.textfield.TextInputLayout>
 
@@ -106,6 +110,8 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:layout_marginStart="40dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
                         android:text="@string/phone_no_signup" />
 
                     <com.google.android.material.textfield.TextInputLayout
@@ -118,6 +124,7 @@
                         <com.google.android.material.textfield.TextInputEditText
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:background="@color/white"
                             android:hint="@string/phone_no_signup" />
                     </com.google.android.material.textfield.TextInputLayout>
 
@@ -127,6 +134,8 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:layout_marginStart="40dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
                         android:text="@string/user_email_signup" />
 
                     <com.google.android.material.textfield.TextInputLayout
@@ -139,6 +148,7 @@
                         <com.google.android.material.textfield.TextInputEditText
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:background="@color/white"
                             android:hint="@string/user_email_signup" />
                     </com.google.android.material.textfield.TextInputLayout>
 
@@ -154,27 +164,30 @@
                             android:orientation="vertical">
 
                             <TextView
-                                android:id="@+id/txtEmailSignup3"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                                android:id="@+id/txtBrandSignUp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
                                 android:layout_marginStart="40dp"
                                 android:layout_marginTop="10dp"
-                                android:layout_weight="1"
-                                android:text="@string/user_email_signup" />
+                                android:layout_weight="3"
+                                android:text="@string/moto_brand_signup"
+                                android:textColor="@color/black"
+                                android:textStyle="bold"/>
 
                             <com.google.android.material.textfield.TextInputLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_marginStart="40dp"
                                 android:layout_marginTop="10dp"
-                                android:layout_marginEnd="40dp"
+                                android:layout_marginEnd="5dp"
                                 android:layout_weight="1">
 
 
                                 <com.google.android.material.textfield.TextInputEditText
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:hint="@string/user_email_signup" />
+                                    android:background="@color/white"
+                                    android:hint="@string/moto_brand_signup" />
 
 
                             </com.google.android.material.textfield.TextInputLayout>
@@ -186,10 +199,21 @@
                             android:layout_weight="1"
                             android:orientation="vertical">
 
+                            <TextView
+                                android:id="@+id/txtSerialSignUp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="3"
+                                android:text="@string/moto_serial_number_signup"
+                                android:textColor="@color/black"
+                                android:textStyle="bold"/>
+
                             <com.google.android.material.textfield.TextInputLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:layout_marginStart="40dp"
+                                android:layout_marginStart="5dp"
                                 android:layout_marginTop="10dp"
                                 android:layout_marginEnd="40dp"
                                 android:layout_weight="1">
@@ -197,10 +221,139 @@
                                 <com.google.android.material.textfield.TextInputEditText
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:hint="@string/user_email_signup" />
+                                    android:background="@color/white"
+                                    android:hint="@string/moto_serial_number_signup" />
                             </com.google.android.material.textfield.TextInputLayout>
                         </LinearLayout>
                     </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/txtSeriesSignUp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="40dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="3"
+                                android:text="@string/moto_series_signup"
+                                android:textColor="@color/black"
+                                android:textStyle="bold" />
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="40dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginEnd="5dp"
+                                android:layout_weight="1">
+
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/white"
+                                    android:hint="@string/moto_series_signup" />
+
+
+                            </com.google.android.material.textfield.TextInputLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/txtColorSignUp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="3"
+                                android:text="@string/moto_color_signup"
+                                android:textColor="@color/black"
+                                android:textStyle="bold" />
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginEnd="40dp"
+                                android:layout_weight="1">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/white"
+                                    android:hint="@string/moto_color_signup" />
+                            </com.google.android.material.textfield.TextInputLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/txtSetMotoName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="40dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:text="@string/set_moto_name_signup" />
+
+                    <TextView
+                        android:id="@+id/txtExplainSetName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginEnd="40dp"
+                        android:textColor="#535353"
+                        android:textSize="10sp"
+                        android:text="@string/text_explain_name_signup"/>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginEnd="40dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edtSetMotoName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:hint="@string/set_moto_name_signup" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <TextView
+                        android:id="@+id/txtQuestionReset"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="40dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:text="@string/question_pass_reset_signup" />
+
+                    <Spinner
+                        android:id="@+id/spinnerQuestion2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:entries="@array/question_lists"/>
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>

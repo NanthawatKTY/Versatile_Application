@@ -70,4 +70,18 @@
     <string name="accept_agreement">I accept agreement and allow to access privacy</string>
     <string name="signup_text_button">Sign up</string>
 
+    <!-- Spinner Reset Questions -->
+    <string-array name="question_lists">
+        <item>Bangkok ?</item>
+        <item>London ?</item>
+        <item>Paris ?</item>
+        <item>Singapore ?</item>
+        <item>New York ?</item>
+        <item>Istanbul ?</item>
+        <item>Dubai ?</item>
+        <item>Kuala Lumpur ?</item>
+        <item>Hong Kong ?</item>
+        <item>Barcelona ?</item>
+    </string-array>
+
 </resources>
