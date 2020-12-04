@@ -59,7 +59,8 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="611dp"
-        android:layout_marginTop="20dp">
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="50dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -70,6 +71,7 @@
                 android:id="@+id/cardView_signUp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginBottom="0dp"
                 android:background="@android:color/background_dark"
                 app:cardBackgroundColor="#D2DDDBDB">
 
@@ -93,13 +95,12 @@
                         android:layout_height="match_parent"
                         android:layout_marginTop="5dp"
                         android:layout_marginStart="40dp"
-                        android:layout_marginEnd="40dp"
-                        android:background="@color/white">
+                        android:layout_marginEnd="40dp">
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:background="@color/white"
+                            android:background="@drawable/rounded_edittxt"
                             android:hint="@string/user_full_name_signup" />
                     </com.google.android.material.textfield.TextInputLayout>
 
@@ -124,7 +125,7 @@
                         <com.google.android.material.textfield.TextInputEditText
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:background="@color/white"
+                            android:background="@drawable/rounded_edittxt"
                             android:hint="@string/phone_no_signup" />
                     </com.google.android.material.textfield.TextInputLayout>
 
@@ -148,7 +149,7 @@
                         <com.google.android.material.textfield.TextInputEditText
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:background="@color/white"
+                            android:background="@drawable/rounded_edittxt"
                             android:hint="@string/user_email_signup" />
                     </com.google.android.material.textfield.TextInputLayout>
 
@@ -170,6 +171,7 @@
                                 android:layout_marginStart="40dp"
                                 android:layout_marginTop="10dp"
                                 android:layout_weight="3"
+                                android:textSize="@dimen/text_size_signUp_form"
                                 android:text="@string/moto_brand_signup"
                                 android:textColor="@color/black"
                                 android:textStyle="bold"/>
@@ -186,7 +188,7 @@
                                 <com.google.android.material.textfield.TextInputEditText
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:background="@color/white"
+                                    android:background="@drawable/rounded_edittxt"
                                     android:hint="@string/moto_brand_signup" />
 
 
@@ -206,6 +208,7 @@
                                 android:layout_marginStart="5dp"
                                 android:layout_marginTop="10dp"
                                 android:layout_weight="3"
+                                android:textSize="@dimen/text_size_signUp_form"
                                 android:text="@string/moto_serial_number_signup"
                                 android:textColor="@color/black"
                                 android:textStyle="bold"/>
@@ -221,7 +224,7 @@
                                 <com.google.android.material.textfield.TextInputEditText
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:background="@color/white"
+                                    android:background="@drawable/rounded_edittxt"
                                     android:hint="@string/moto_serial_number_signup" />
                             </com.google.android.material.textfield.TextInputLayout>
                         </LinearLayout>
@@ -245,6 +248,7 @@
                                 android:layout_marginStart="40dp"
                                 android:layout_marginTop="10dp"
                                 android:layout_weight="3"
+                                android:textSize="@dimen/text_size_signUp_form"
                                 android:text="@string/moto_series_signup"
                                 android:textColor="@color/black"
                                 android:textStyle="bold" />
@@ -259,9 +263,10 @@
 
 
                                 <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/txtEdtSeriesSignUp"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:background="@color/white"
+                                    android:background="@drawable/rounded_edittxt"
                                     android:hint="@string/moto_series_signup" />
 
 
@@ -281,6 +286,7 @@
                                 android:layout_marginStart="5dp"
                                 android:layout_marginTop="10dp"
                                 android:layout_weight="3"
+                                android:textSize="@dimen/text_size_signUp_form"
                                 android:text="@string/moto_color_signup"
                                 android:textColor="@color/black"
                                 android:textStyle="bold" />
@@ -294,9 +300,10 @@
                                 android:layout_weight="1">
 
                                 <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/txtEdtColorSignUp"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:background="@color/white"
+                                    android:background="@drawable/rounded_edittxt"
                                     android:hint="@string/moto_color_signup" />
                             </com.google.android.material.textfield.TextInputLayout>
                         </LinearLayout>
@@ -308,6 +315,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:layout_marginStart="40dp"
+                        android:textSize="@dimen/text_size_signUp_form"
                         android:textStyle="bold"
                         android:textColor="@color/black"
                         android:text="@string/set_moto_name_signup" />
@@ -334,7 +342,7 @@
                             android:id="@+id/edtSetMotoName"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:background="@color/white"
+                            android:background="@drawable/rounded_edittxt"
                             android:hint="@string/set_moto_name_signup" />
                     </com.google.android.material.textfield.TextInputLayout>
 
@@ -344,19 +352,113 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:layout_marginStart="40dp"
+                        android:textSize="@dimen/text_size_signUp_form"
                         android:textStyle="bold"
                         android:textColor="@color/black"
                         android:text="@string/question_pass_reset_signup" />
 
                     <Spinner
-                        android:id="@+id/spinnerQuestion2"
+                        android:id="@+id/spinnerQuestionReset"
+                        android:layout_height="50dp"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginEnd="40dp"
+                        android:background="@drawable/rounded_edittxt"
                         android:entries="@array/question_lists"/>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginEnd="40dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/txtEdtAnswerResetSignUp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/rounded_edittxt"
+                            android:hint="@string/answer_pass_reset_signup" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <TextView
+                        android:id="@+id/txtSetPassword"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="40dp"
+                        android:textSize="@dimen/text_size_signUp_form"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:text="@string/set_password_signup" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginEnd="40dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/txtEdtSetPassSignUp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/rounded_edittxt"
+                            android:hint="@string/set_password_signup" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <TextView
+                        android:id="@+id/txtConfirmPassSignUp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="40dp"
+                        android:textSize="@dimen/text_size_signUp_form"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:text="@string/confirm_password_signup" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginEnd="40dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/txtEdtConfirmPassSignUp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/rounded_edittxt"
+                            android:hint="@string/confirm_password_signup" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/accept_agreement" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="80dp"
+                android:textColor="@color/white"
+                android:background="@drawable/rounded_button"
+                android:layout_gravity="center"
+                android:text="@string/signup_text_button" />
         </LinearLayout>
     </ScrollView>
 

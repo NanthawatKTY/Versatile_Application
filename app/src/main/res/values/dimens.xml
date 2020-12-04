@@ -24,4 +24,7 @@
     <dimen name="progress_bar_size">50dp</dimen>
     <dimen name="progress_text_marginStart">16dp</dimen>
     <dimen name="progress_text_size">16sp</dimen>
+
+<!--  Text size Sign up form  -->
+    <dimen name="text_size_signUp_form">14sp</dimen>
 </resources>
