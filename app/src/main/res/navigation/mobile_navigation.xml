@@ -54,12 +54,20 @@
             <action
                 android:id="@+id/action_navigation_signin_to_navigation_signup"
                 app:destination="@id/navigation_signup" />
+            <action
+                android:id="@+id/action_navigation_signin_to_navigation_forgetPassword"
+                app:destination="@id/navigation_forgetPassword" />
         </fragment>
 
-            <fragment
-                android:id="@+id/navigation_signup"
-                android:name="com.example.versatileapplication.fragments.login.SignupFragment"
-                tools:layout="@layout/fragment_signup" />
+        <fragment
+            android:id="@+id/navigation_signup"
+            android:name="com.example.versatileapplication.fragments.login.SignupFragment"
+            tools:layout="@layout/fragment_signup" />
+
+        <fragment
+            android:id="@+id/navigation_forgetPassword"
+            android:name="com.example.versatileapplication.fragments.forgetpassword.ForgetFragment"
+            tools:layout="@layout/fragment_forget" />
 
         <fragment
             android:id="@+id/navigation_user_info"

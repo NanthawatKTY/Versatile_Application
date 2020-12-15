@@ -85,4 +85,10 @@
         <item>Barcelona ?</item>
     </string-array>
 
+    <!--  Text for forget password  -->
+    <string name="forget_pass_txt">Forget password</string>
+    <string name="question_forget_txt">Question when you want to reset password</string>
+    <string name="answer_forget_edt">Type your question here</string>
+    <string name="call_center_txt">If you can not remember, please contact call center</string>
+    <string name="call_center_tel">Tel. 02–1234567</string>
 </resources>

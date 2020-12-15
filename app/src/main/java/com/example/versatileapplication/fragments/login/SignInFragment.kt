@@ -27,7 +27,10 @@ class SignInFragment : Fragment(R.layout.fragment_sign_in) {
       havenoIChange.setOnClickListener{
          it.findNavController().navigate(R.id.action_navigation_signin_to_navigation_signup)
       }
+
+      // Forget Password
+      forgetPassword.setOnClickListener{
+         it.findNavController().navigate(R.id.action_navigation_signin_to_navigation_forgetPassword)
+      }
    }
-
-
 }

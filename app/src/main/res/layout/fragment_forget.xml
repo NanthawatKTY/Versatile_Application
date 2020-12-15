@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.forgetpassword.ForgetFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="109dp"
+        android:layout_marginTop="60dp"
+        android:background="@android:color/background_dark"
+        app:cardBackgroundColor="#D2C1C0C0"
+        app:cardCornerRadius="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="136dp">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="131dp"
+                android:columnCount="2">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="94dp"
+                    android:layout_height="68dp"
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    android:layout_marginLeft="50dp"
+                    android:contentDescription="loginIcon"
+                    android:src="@drawable/login"
+                    app:layout_column="1"
+                    app:layout_row="0" />
+
+                <TextView
+                    android:id="@+id/forgetPasswordFragmentText"
+                    android:layout_width="318dp"
+                    android:layout_height="99dp"
+                    android:layout_row="1"
+                    android:layout_column="1"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/forget_pass_txt"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_column="2"
+                    app:layout_row="0" />
+
+            </GridLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="633dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/white">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/card_view_layout_content_padding">
+
+                <TextView
+                    android:id="@+id/txtEmailorPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/email_or_phone" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/authentication_screen_til_marginStartEnd"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="@dimen/authentication_screen_til_marginStartEnd">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/et_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edit_text_forget_password"
+                        android:hint="@string/prompt_email"
+                        android:inputType="textEmailAddress"
+                        android:textSize="@dimen/et_text_size" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <TextView
+                    android:id="@+id/txtPassTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/prompt_password" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/authentication_screen_til_marginStartEnd"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="@dimen/authentication_screen_til_marginStartEnd">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/et_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edit_text_forget_password"
+                        android:hint="@string/password_hint"
+                        android:inputType="textPassword"
+                        android:textSize="@dimen/et_text_size" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/txtForgetQuestTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/question_forget_txt" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txtViewForgetQuest"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/authentication_screen_til_marginStartEnd"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="@dimen/authentication_screen_til_marginStartEnd">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusable="false"
+                        android:cursorVisible="false"
+                        android:background="@drawable/edit_text_forget_password"
+                        android:hint="Question will appears here from firebase." />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/authentication_screen_til_marginStartEnd"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="@dimen/authentication_screen_til_marginStartEnd">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/edt_forget_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edit_text_forget_password"
+                        android:hint="@string/answer_forget_edt"
+                        android:inputType="text"
+                        android:textSize="@dimen/et_text_size" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/txtForgetCallCenter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#E9777474"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/call_center_txt" />
+
+                <TextView
+                    android:id="@+id/txtForgetCallCenterTel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#E9777474"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/call_center_tel" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_signin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginEnd="50dp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:background="@drawable/rounded_button"
+                    android:text="Button" />
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</FrameLayout>
