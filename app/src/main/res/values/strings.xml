@@ -58,7 +58,7 @@
     <string name="phone_no_signup">Phone number</string>
     <string name="user_email_signup">Email</string>
     <string name="moto_brand_signup">Brand</string>
-    <string name="moto_serial_number_signup">Motorcycle serial number</string>
+    <string name="moto_serial_number_signup">Serial number</string>
     <string name="moto_series_signup">Series</string>
     <string name="moto_color_signup">Color</string>
     <string name="set_moto_name_signup">Set your motorcycle name</string>
@@ -91,4 +91,5 @@
     <string name="answer_forget_edt">Type your question here</string>
     <string name="call_center_txt">If you can not remember, please contact call center</string>
     <string name="call_center_tel">Tel. 02–1234567</string>
+    <string name="next_Btn">Next</string>
 </resources>

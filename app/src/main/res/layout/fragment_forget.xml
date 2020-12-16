@@ -85,24 +85,18 @@
                     android:layout_marginLeft="15dp"
                     android:text="@string/email_or_phone" />
 
-                <com.google.android.material.textfield.TextInputLayout
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/et_email"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="60dp"
                     android:layout_marginStart="@dimen/authentication_screen_til_marginStartEnd"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginEnd="@dimen/authentication_screen_til_marginStartEnd">
-
-                    <androidx.appcompat.widget.AppCompatEditText
-                        android:id="@+id/et_email"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/edit_text_forget_password"
-                        android:hint="@string/prompt_email"
-                        android:inputType="textEmailAddress"
-                        android:textSize="@dimen/et_text_size" />
-
-                </com.google.android.material.textfield.TextInputLayout>
-
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="@dimen/authentication_screen_til_marginStartEnd"
+                    android:background="@drawable/rounded_edit_txt_grey"
+                    android:paddingLeft="15dp"
+                    android:hint="@string/prompt_email"
+                    android:inputType="textEmailAddress"
+                    android:textSize="@dimen/et_text_size" />
 
                 <TextView
                     android:id="@+id/txtPassTitle"
@@ -114,22 +108,18 @@
                     android:layout_marginLeft="15dp"
                     android:text="@string/prompt_password" />
 
-                <com.google.android.material.textfield.TextInputLayout
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/et_password"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="60dp"
                     android:layout_marginStart="@dimen/authentication_screen_til_marginStartEnd"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginEnd="@dimen/authentication_screen_til_marginStartEnd">
-
-                    <androidx.appcompat.widget.AppCompatEditText
-                        android:id="@+id/et_password"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/edit_text_forget_password"
-                        android:hint="@string/password_hint"
-                        android:inputType="textPassword"
-                        android:textSize="@dimen/et_text_size" />
-                </com.google.android.material.textfield.TextInputLayout>
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="@dimen/authentication_screen_til_marginStartEnd"
+                    android:background="@drawable/rounded_edit_txt_grey"
+                    android:paddingLeft="15dp"
+                    android:textSize="@dimen/et_text_size"
+                    android:hint="@string/password_hint"
+                    android:inputType="textPassword" />
 
                 <TextView
                     android:id="@+id/txtForgetQuestTitle"
@@ -141,39 +131,33 @@
                     android:layout_marginLeft="15dp"
                     android:text="@string/question_forget_txt" />
 
-                <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/txtViewForgetQuest"
+                <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/authentication_screen_til_marginStartEnd"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginEnd="@dimen/authentication_screen_til_marginStartEnd">
-
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:focusable="false"
-                        android:cursorVisible="false"
-                        android:background="@drawable/edit_text_forget_password"
-                        android:hint="Question will appears here from firebase." />
-                </com.google.android.material.textfield.TextInputLayout>
-
-                <com.google.android.material.textfield.TextInputLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="60dp"
                     android:layout_marginStart="@dimen/authentication_screen_til_marginStartEnd"
                     android:layout_marginTop="10dp"
-                    android:layout_marginEnd="@dimen/authentication_screen_til_marginStartEnd">
+                    android:layout_marginEnd="@dimen/authentication_screen_til_marginStartEnd"
+                    android:background="@drawable/rounded_edit_txt_grey"
+                    android:paddingLeft="15dp"
+                    android:textSize="@dimen/et_text_size"
+                    android:textStyle="bold"
+                    android:focusable="false"
+                    android:cursorVisible="false"
+                    android:textColorHint="#504E4E"
+                    android:hint="Question will appears here from firebase." />
 
-                    <androidx.appcompat.widget.AppCompatEditText
-                        android:id="@+id/edt_forget_password"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/edit_text_forget_password"
-                        android:hint="@string/answer_forget_edt"
-                        android:inputType="text"
-                        android:textSize="@dimen/et_text_size" />
-                </com.google.android.material.textfield.TextInputLayout>
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edt_forget_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="@dimen/authentication_screen_til_marginStartEnd"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="@dimen/authentication_screen_til_marginStartEnd"
+                    android:background="@drawable/rounded_edit_txt_grey"
+                    android:paddingLeft="15dp"
+                    android:textSize="@dimen/et_text_size"
+                    android:inputType="text"
+                    android:hint="@string/answer_forget_edt" />
 
                 <TextView
                     android:id="@+id/txtForgetCallCenter"
@@ -196,17 +180,16 @@
                     android:text="@string/call_center_tel" />
 
                 <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/btn_signin"
-                    android:layout_width="match_parent"
+                    android:id="@+id/btn_next_forget"
+                    android:layout_width="158dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="15dp"
-                    android:layout_marginStart="50dp"
-                    android:layout_marginEnd="50dp"
                     android:layout_gravity="center"
-                    android:textColor="@color/white"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="50dp"
                     android:background="@drawable/rounded_button"
-                    android:text="Button" />
-
+                    android:text="@string/next_Btn"
+                    android:textColor="@color/white" />
 
             </LinearLayout>
 

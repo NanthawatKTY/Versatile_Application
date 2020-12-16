@@ -67,7 +67,16 @@
         <fragment
             android:id="@+id/navigation_forgetPassword"
             android:name="com.example.versatileapplication.fragments.forgetpassword.ForgetFragment"
-            tools:layout="@layout/fragment_forget" />
+            tools:layout="@layout/fragment_forget" >
+            <action
+                android:id="@+id/action_navigation_forgetPassword_to_navigation_forgetPassword_ResetPass"
+                app:destination="@id/navigation_forgetPassword_ResetPass" />
+        </fragment>
+
+        <fragment
+            android:id="@+id/navigation_forgetPassword_ResetPass"
+            android:name="com.example.versatileapplication.fragments.forgetpassword.ResetForgetFragment"
+            tools:layout="@layout/fragment_reset_forget" />
 
         <fragment
             android:id="@+id/navigation_user_info"
