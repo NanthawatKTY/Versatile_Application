@@ -4,9 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".fragments.forgetpassword.ResetForgetFragment">
+    tools:context=".fragments.login.LoggedInFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="109dp"
@@ -43,7 +42,7 @@
                     android:layout_row="1"
                     android:layout_column="1"
                     android:layout_marginTop="10dp"
-                    android:text="@string/forget_pass_txt"
+                    android:text="@string/user_login_out"
                     android:textAlignment="textStart"
                     android:textColor="@color/black"
                     android:textSize="30sp"
@@ -77,61 +76,30 @@
                 android:orientation="vertical"
                 android:padding="@dimen/card_view_layout_content_padding">
 
-                <TextView
-                    android:id="@+id/txtEmailorPhone"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/black"
-                    android:textStyle="bold"
-                    android:layout_marginLeft="15dp"
-                    android:text="@string/setNewPasswordForget" />
-
-                <androidx.appcompat.widget.AppCompatEditText
-                    android:id="@+id/et_email"
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_log_out"
                     android:layout_width="match_parent"
-                    android:layout_height="60dp"
-                    android:layout_marginStart="@dimen/authentication_screen_til_marginStartEnd"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginEnd="@dimen/authentication_screen_til_marginStartEnd"
-                    android:background="@drawable/rounded_edit_txt_grey"
-                    android:paddingLeft="15dp"
-                    android:hint="@string/setNewPasswordForget"
-                    android:inputType="textEmailAddress"
-                    android:textSize="@dimen/et_text_size" />
-
-                <TextView
-                    android:id="@+id/txtPassTitle"
-                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="50dp"
+                    android:background="@drawable/rounded_button"
+                    android:text="@string/btn_logout"
                     android:textStyle="bold"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginLeft="15dp"
-                    android:text="@string/confirmNewPasswordForget" />
-
-                <androidx.appcompat.widget.AppCompatEditText
-                    android:id="@+id/et_password"
-                    android:layout_width="match_parent"
-                    android:layout_height="60dp"
-                    android:layout_marginStart="@dimen/authentication_screen_til_marginStartEnd"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginEnd="@dimen/authentication_screen_til_marginStartEnd"
-                    android:background="@drawable/rounded_edit_txt_grey"
-                    android:paddingLeft="15dp"
-                    android:textSize="@dimen/et_text_size"
-                    android:hint="@string/confirmNewPasswordForget"
-                    android:inputType="textPassword" />
+                    android:textColor="@color/white" />
 
                 <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/btn_next_forget"
-                    android:layout_width="158dp"
+                    android:id="@+id/btn_delete_account"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginStart="50dp"
                     android:layout_marginTop="30dp"
                     android:layout_marginEnd="50dp"
                     android:background="@drawable/rounded_button"
-                    android:text="@string/finish_btn_forget"
+                    android:text="@string/btn_delete_account"
+                    android:textStyle="bold"
                     android:textColor="@color/white" />
 
             </LinearLayout>

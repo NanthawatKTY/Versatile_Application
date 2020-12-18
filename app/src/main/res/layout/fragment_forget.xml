@@ -6,7 +6,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragments.forgetpassword.ForgetFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="109dp"
@@ -67,8 +66,8 @@
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
             app:cardBackgroundColor="@color/white">
-
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -83,7 +82,7 @@
                     android:textColor="@color/black"
                     android:textStyle="bold"
                     android:layout_marginLeft="15dp"
-                    android:text="@string/email_or_phone" />
+                    android:text="@string/prompt_email" />
 
                 <androidx.appcompat.widget.AppCompatEditText
                     android:id="@+id/et_email"
@@ -106,7 +105,7 @@
                     android:textStyle="bold"
                     android:layout_marginTop="20dp"
                     android:layout_marginLeft="15dp"
-                    android:text="@string/prompt_password" />
+                    android:text="@string/phoneTxt" />
 
                 <androidx.appcompat.widget.AppCompatEditText
                     android:id="@+id/et_password"
@@ -118,7 +117,7 @@
                     android:background="@drawable/rounded_edit_txt_grey"
                     android:paddingLeft="15dp"
                     android:textSize="@dimen/et_text_size"
-                    android:hint="@string/password_hint"
+                    android:hint="@string/phoneTxt"
                     android:inputType="textPassword" />
 
                 <TextView

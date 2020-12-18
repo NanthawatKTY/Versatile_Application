@@ -92,4 +92,21 @@
     <string name="call_center_txt">If you can not remember, please contact call center</string>
     <string name="call_center_tel">Tel. 02–1234567</string>
     <string name="next_Btn">Next</string>
+    <string name="phoneTxt">Phone Number</string>
+    <string name="setNewPasswordForget">Set New Password</string>
+    <string name="confirmNewPasswordForget">Confirm New Password</string>
+    <string name="finish_btn_forget">Submit</string>
+
+    <!--  Text for Logged in page  -->
+    <string name="btn_logout">Log Out</string>
+    <string name="btn_delete_account">Delete Account</string>
+
+
+    <!--  User info text -->
+    <string name="user_info_name">Name: </string>
+    <string name="user_info_phone">Phone no.: </string>
+    <string name="user_info_email">Email: </string>
+    <string name="user_info_edit"><b><u>Edit</u></b></string>
+
+
 </resources>
